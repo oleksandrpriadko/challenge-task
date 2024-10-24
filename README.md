@@ -1,5 +1,12 @@
 # Technical Task 
 [Entain_Technical_Task_Android_2024_.docx](https://github.com/user-attachments/files/17501296/Entain_Technical_Task_Android_2024_.docx)
+
+# Demo
+
+
+https://github.com/user-attachments/assets/9ff6d12b-bbcf-4509-9655-ce413198971f
+
+
 ## General description of the solution
 - I replicated behaviour of the webpage you referenced to: https://www.neds.com.au/next-to-go
 - UI refreshed every 1 second (customizable within the code)
