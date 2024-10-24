@@ -21,6 +21,8 @@ https://github.com/user-attachments/assets/9ff6d12b-bbcf-4509-9655-ce413198971f
 - Jetpack compose for UI
 - Material design, no custom components
 - Compose previews in WholeScreen.kt
+- Koin for dependency injection (I remember that you use Hilt, I used it before either and I can use it if needed but I want to
+show you how koin works :) )
 
 ## Structure
 - Kotlin DSL
