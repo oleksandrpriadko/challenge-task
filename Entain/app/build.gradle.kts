@@ -73,28 +73,15 @@ dependencies {
     implementation(project(":component:backend"))
     implementation(project(":presentation:shared"))
 
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
-    testImplementation(libs.junit)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.androidx.ui.tooling)
-    debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(platform(libs.compose.bom))
+    implementation(libs.compose.activity)
+    implementation(libs.compose.ui)
+    implementation(libs.compose.ui.tooling.preview)
+    implementation(libs.compose.material3)
 
     debugImplementation(libs.leakcanary.android)
-    testImplementation(libs.android.test.core)
 
-    implementation(libs.fragment.kts)
-    implementation(libs.recyclerview)
     implementation(libs.viewmodel.ktx)
-    implementation(libs.livedata.ktx)
-    kapt(libs.lifecycle.compiler)
-
-    implementation(libs.coil)
 
     implementation(platform(libs.koin.bom))
     implementation(libs.bundles.koin)

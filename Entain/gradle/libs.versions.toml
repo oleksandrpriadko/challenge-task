@@ -2,56 +2,33 @@
 agp = "8.7.1"
 kotlinJvm = "1.9.22"
 kotlin = "2.0.20"
-coreKtx = "1.13.1"
-junit = "4.13.2"
-junitVersion = "1.2.1"
 kotlinxDatetime = "0.6.1"
-lifecycleRuntimeKtx = "2.8.6"
-activityCompose = "1.9.3"
-composeBom = "2024.10.00"
-
 core = "1.13.1"
-coreXTest = "1.6.1"
+composeBom = "2024.10.00"
 leakcanaryAndroid = "2.13"
 material = "1.12.0"
-perfPlugin = "1.4.2"
 serializationJsonJvm = "1.6.3"
 coroutines = "1.9.0"
 kermit = "2.0.2"
 lifecycle = "2.8.6"
-fragmentX = "1.8.4"
-recyclerView = "1.3.2"
-coil = "2.7.0"
 kotest = "5.6.2"
 mockk = "1.13.5"
 ktor = "2.3.12"
-appcompat = "1.7.0"
 koinBom = "3.5.0"
 
 [libraries]
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
-androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
-androidx-ui = { group = "androidx.compose.ui", name = "ui" }
-androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
-androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
-androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
-androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-
-coil = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-activity = { group = "androidx.activity", name = "activity-compose" }
 
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
 
-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerView" }
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core" }
-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-fragment-kts = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentX" }
 
-android-test-core = { module = "androidx.test:core", version.ref = "coreXTest" }
-androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "core" }
-kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
 kotest-runner = { group = "io.kotest", name = "kotest-runner-junit5-jvm", version.ref = "kotest" }
 kotest-assertions-core = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotest" }
 kotest-datatest = { group = "io.kotest", name = "kotest-framework-datatest-jvm", version.ref = "kotest" }
@@ -59,14 +36,9 @@ mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 
 leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanaryAndroid" }
 
-gradle = { module = "com.android.tools.build:gradle", version.ref = "agp" }
-
 kotlin-json-jvm = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm", version.ref = "serializationJsonJvm" }
-kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
 coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
-kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
-playservices-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-play-services", version.ref = "coroutines" }
 
 ktor-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
 ktor-android = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor" }
@@ -75,26 +47,16 @@ ktor-logging = { group = "io.ktor", name = "ktor-client-logging-jvm", version.re
 ktor-serialization = { group = "io.ktor", name = "ktor-client-serialization", version.ref = "ktor" }
 ktor-json = { group = "io.ktor", name = "ktor-client-json", version.ref = "ktor" }
 ktor-serialization-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
-ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
-ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
 
 kermit = { group = "co.touchlab", name = "kermit", version.ref = "kermit" }
 
-perf-plugin = { module = "com.google.firebase:perf-plugin", version.ref = "perfPlugin" }
-
 viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
-lifecycle-compiler = { group = "androidx.lifecycle", name = "lifecycle-compiler", version.ref = "lifecycle" }
-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
-
-androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 
 koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koinBom" }
 koin-android = { module = "io.insert-koin:koin-android" }
 koin-test-junit4 = { module = "io.insert-koin:koin-test-junit4" }
 koin-compose = { module = "io.insert-koin:koin-androidx-compose" }
 koin-annotations = { module = "io.insert-koin:koin-annotations", version = "1.3.1" }
-
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
